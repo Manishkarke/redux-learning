@@ -6,7 +6,7 @@ const icecreamReducer = require("../Features/IceCream/icecreamSlice");
 const logger = reduxLogger.createLogger();
 const store = configureStore({
   reducer: { cake: cakeReducer, icecream: icecreamReducer, user: userReducer },
-  //   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
 
 module.exports = store;
